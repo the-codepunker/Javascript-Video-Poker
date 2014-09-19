@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title>JavaScript Video Poker</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="description" content="This is a Free Video Poker game written entirely in JavaScript by The CodePunker.">
+</head>
+<body>
+    <div id="dealtcards">
+    </div>
+    <div class="results" id="result">
+        <span class="result"></span>
+        <span class="winnings"></span>
+    </div>
+    <div id="rorb">
+    </div>
+    <div id="controls">
+      <div class="wrapper">
+        <a href="#" id="dealCards">Deal</a>
+        <a href="#" id="changeCards">Change</a>
+        <a href="#" id="credits">Credits: <span></span></a>
+        <a href="#" class="color" id="red">RED</a>
+        <a href="#" class="color" id="black">BLACK</a>
+      </div>
+    </div>
+    <div class="help">
+      <h1>JavaScript Video Poker</h1>
+      <p>To start playing select the cards you want to keep and then click "Change Cards"</p>
+      <p>If you get a winning card you will be asked to guess whether the next card in the deck is red or black</p>
+      <p>Each correct guess will double your winnings. If you guess 3 cards in a row you win the current hand. A wrong guess will cause you to lose the curent hand.</p>
+      <p>Don't worry there's no real money involved... If you ever run out of credits, just refresh the page to start over.</p>
+      <button class="dismisshelp">Close this window</button>
+    </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="classes.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

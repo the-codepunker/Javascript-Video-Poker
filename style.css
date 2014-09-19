@@ -1,0 +1,58 @@
+@-ms-viewport { width: device-width; }
+
+body { 
+  background: url('back.jpg'); background: url('logo.png') center center no-repeat, url('back.jpg') repeat; margin: 0; color: #444; font-family: sans-serif; font-size: 12px; -webkit-touch-callout: none;
+    -webkit-user-select: none;  -khtml-user-select: none;  -moz-user-select: none;    -ms-user-select: none;    user-select: none;
+}
+.card { 
+width: 100px; height: 145px; margin: .5%; background: white url('cards.png'); background-position: -196px -571px; display: inline-block; max-width: 19%; cursor: pointer; border-radius: 2px; box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.4); transition: box-shadow .2s ease-in-out;
+}
+.card:hover { 
+  box-shadow: none;
+}
+.card.tobechanged { 
+  background-position: -196px -571px !important;
+}
+div#dealtcards {
+  overflow: hidden; margin: 0px auto; text-align: center; padding: 20px 5px; box-sizing: border-box;
+}
+#rorb { 
+  text-align: center;
+}
+.results {
+  background: rgba(0, 0, 0, 0.33); text-align: center; padding: 10px; font-size: 1.5em; text-transform: uppercase; font-weight: bold; color: white; box-sizing:border-box;
+}
+#controls {
+  position: fixed; bottom: 0px; left: 0; width: 100%; min-height: 40px; text-align: center; background: #063a2b; box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.31); border-top: 1px solid #366130;
+}
+.wrapper { 
+  max-width: 100%; width: 980px; margin: auto;
+}
+#controls a {
+  color: #FFF; text-decoration: none; padding: 10px; background: cadetblue; width: 18%; box-sizing: border-box; display: inline-block; margin: .5%; text-align: center; vertical-align: middle; 
+}
+#controls a#red { 
+  background: rgb(206, 43, 43);
+}
+#controls a#black { 
+  background: rgb(17, 17, 17);
+}
+#controls a#credits { 
+  background: #EFEFEF; color: #444;
+}
+.help {
+  position: fixed; overflow-y: auto; overflow-x: hidden; right: 25%; width: 49%; box-sizing: border-box; background: white; height: auto; top: 20%; padding: 10px; box-shadow: 0 0 20px #000; border-radius: 3px;
+}
+.help h1 {
+  text-align: center;
+}
+.help p {
+font-size: 16px;
+}
+button.dismisshelp {
+  background: rgb(112, 165, 195); border: 1px solid rgb(74, 145, 179); color: white; padding: 10px; margin: auto; display: block; 
+}
+@media (max-width: 480px) {
+  .card { max-height: 80px; }
+  .help { width: 98%; height: 95%; right: 1%; top:1%; }
+}
